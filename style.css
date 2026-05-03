@@ -1,0 +1,30 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    background-color: beige;
+    margin:auto;
+
+}
+
+h1 {
+    color:rgb(40, 91, 186);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:128pt;
+    text-align:center;
+    text-shadow: 5px 5px white;
+    animation: blink steps(2,jump-none) 2s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity:0.1;
+    }
+
+    100% {
+        opacity:1;
+    }
+}
+
+

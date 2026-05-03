@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal dang it!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="blinking">Journal!</h1>
+    <audio id="sound" src="journal.m4a"></audio>
+
+    <script>
+        setInterval( () => {
+            console.log("playing");
+            let sound = document.getElementById("sound");
+            sound.play();
+        }, 60000);
+    </script>
+</body>
+</html>
