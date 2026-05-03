@@ -8,23 +8,14 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="blinking">Journal!</h1>
+        <h1 class="blink" id="journal">Journal!</h1>
         <div class="imgbox">
             <img id="face" src="face.jpg">
         </div>
     </div>
     
     <audio controls id="sound" src="journal.m4a"></audio>
-    <script>
-        setInterval( () => {
-            console.log("playing");
-            let sound = document.getElementById("sound");
-            let face = document.getElementById("face");
-            sound.play();
-            face.classList.remove("go");
-            face.offsetWidth;
-            face.classList.add("go");
-        }, 90000);
+    <script type="text/javascript" src="script.js">
     </script>
 </body>
 </html>
