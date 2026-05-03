@@ -7,13 +7,40 @@ body {
     margin:auto;
     text-align:center;
 }
+
+#controls {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;    
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+}
+
+#controls h6 {
+    margin: 0;
+    margin-bottom: 10px;
+    width:fit-content;
+    display:inline-block;
+    flex-shrink: 0;
+    flex-grow: 0;
+    font-size: 8px;
+}
+
+#countdown {
+    display:inline-block;
+}
 audio::-webkit-media-controls-panel {
-    position:relative;
     background-color: beige;
 }
 
+#audiocontainer {
+    width: 150px;
+    height: 30px;
+    overflow: hidden;
+}
 audio {
-    position:absolute;
     transform: scale(0.5) translateX(-50%) translateY(-50%);
     left: 0;
     top: 0;    
