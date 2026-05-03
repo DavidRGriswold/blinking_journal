@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="blinking">Journal!</h1>
+    <div class="container">
+        <h1 class="blinking">Journal!</h1>
+        <div class="imgbox">
+            <img id="face" src="face.jpg">
+        </div>
+    </div>
     
-    <img id="face" src="face.jpg">
-    <br>
     <audio controls id="sound" src="journal.m4a"></audio>
     <script>
         setInterval( () => {
@@ -18,12 +21,10 @@
             let sound = document.getElementById("sound");
             let face = document.getElementById("face");
             sound.play();
-            face.style.opacity = 1;
-            setTimeout( () =>
-                {
-                    face.style.opacity = 0;
-                }, 4000);
-        }, 60000);
+            face.classList.remove("go");
+            face.offsetWidth;
+            face.classList.add("go");
+        }, 90000);
     </script>
 </body>
 </html>
