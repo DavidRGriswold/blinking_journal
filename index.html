@@ -8,13 +8,21 @@
 </head>
 <body>
     <h1 class="blinking">Journal!</h1>
+    
+    <img id="face" src="face.jpg">
+    <br>
     <audio controls id="sound" src="journal.m4a"></audio>
-
     <script>
         setInterval( () => {
             console.log("playing");
             let sound = document.getElementById("sound");
+            let face = document.getElementById("face");
             sound.play();
+            face.style.opacity = 1;
+            setTimeout( () =>
+                {
+                    face.style.opacity = 0;
+                }, 4000);
         }, 60000);
     </script>
 </body>

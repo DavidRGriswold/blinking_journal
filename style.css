@@ -5,7 +5,14 @@
 body {
     background-color: beige;
     margin:auto;
+    text-align:center;
+}
 
+#face {
+    width:35%;
+    border: 2px solid black;
+    border-radius: 10px;
+    opacity: 0;
 }
 
 h1 {
@@ -15,6 +22,7 @@ h1 {
     text-align:center;
     text-shadow: 5px 5px white;
     animation: blink steps(2,jump-none) 2s infinite;
+    margin-bottom:10px;
 }
 
 @keyframes blink {
