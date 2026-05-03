@@ -16,16 +16,23 @@ body {
     position: fixed;
     left: 0;
     bottom: 10px;
+    padding:10px;
 }
 
 #controls h6 {
     margin: 0;
-    margin-bottom: 10px;
     width:fit-content;
     display:inline-block;
     flex-shrink: 0;
     flex-grow: 0;
-    font-size: 8px;
+    font-size: 12px;
+}
+
+#pauseButton {
+    padding: 0 5px;
+    font-size:12px;
+    font-family:'Monaco',"Consolas",'Courier New', Courier, monospace;
+    height:22px;
 }
 
 #countdown {
@@ -35,11 +42,6 @@ audio::-webkit-media-controls-panel {
     background-color: beige;
 }
 
-#audiocontainer {
-    width: 150px;
-    height: 30px;
-    overflow: hidden;
-}
 audio {
     transform: scale(0.5) translateX(-50%) translateY(-50%);
     left: 0;
